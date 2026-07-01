@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Меню | Почи</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+<a aria-label="Почи ресторант" class="logo" href="index.html">
+<span>Почи</span>
+<small>Ресторант</small>
+</a>
+<nav class="nav" id="nav">
+<a data-page="index" href="index.html">Начало</a>
+<a class="active" data-page="menu" href="menu.html">Меню</a>
+<a data-page="about" href="about.html">За нас</a>
+<a data-page="gallery" href="gallery.html">Галерия</a>
+<a data-page="reservations" href="reservations.html">Резервации</a>
+<a data-page="contacts" href="contacts.html">Контакти</a>
+<a class="orders-nav-link" data-page="orders" href="orders.html">Вашите поръчки <span class="order-badge" data-order-count=""></span></a></nav>
+<a class="header-button order-header-button" href="orders.html">Вашите поръчки <span class="order-badge" data-order-count=""></span></a>
+<button aria-label="Отвори меню" class="menu-toggle" id="menuToggle" type="button">
+<span></span>
+<span></span>
+<span></span>
+<span class="burger-order-badge" data-order-count=""></span></button>
+</header>
+<main>
+<section class="page-hero">
+<img alt="Меню в ресторант Почи" src="img/ястия4.png"/>
+<div class="container">
+<p class="eyebrow script-text">Сезонност и вкус</p>
+<h1>Меню</h1>
+<p>Вдъхновени от сезонността и българските продукти, създаваме ястия с внимание към всеки детайл.</p>
+<a class="btn btn-fill" href="orders.html">Вашите поръчки</a>
+</div>
+</section>
+<div class="menu-tabs" data-filter-group="menu">
+<button class="tab active" data-filter="all" type="button">Всичко</button>
+<button class="tab" data-filter="starters" type="button">Предястия</button>
+<button class="tab" data-filter="mains" type="button">Основни</button>
+<button class="tab" data-filter="pasta" type="button">Паста и ризото</button>
+<button class="tab" data-filter="desserts" type="button">Десерти</button>
+<button class="tab" data-filter="drinks" type="button">Напитки</button>
+</div>
+<section class="section">
+<div class="container">
+<div class="order-intro"><p>Натиснете <strong>Добави +</strong>, за да добавите ястие към демонстрационната поръчка. </p><a class="btn btn-line" href="orders.html">Виж поръчките</a></div><div class="menu-grid">
+<article class="menu-item" data-category="starters" data-image="img/ястия1.png" data-name="Бурата с чери домати" data-price="18.00">
+<img alt="Бурата с чери домати" src="img/ястия1.png"/>
+<div>
+<h3>Бурата с чери домати</h3>
+<p>Кремообразна бурата, ароматни чери домати, босилеково песто и зехтин.</p>
+<span>18.00 euro</span>
+</div>
+<button aria-label="Добави Бурата с чери домати към поръчката" class="add-to-order" type="button"><span class="order-button-label">Добави</span><span class="order-button-plus">+</span></button></article>
+<article class="menu-item" data-category="starters" data-image="img/ястия4.png" data-name="Печен октопод" data-price="24.00">
+<img alt="Печен октопод" src="img/ястия4.png"/>
+<div>
+<h3>Печен октопод</h3>
+<p>Печен октопод с бял боб пюре, домати конфит и пушен червен пипер.</p>
+<span>24.00 euro</span>
+</div>
+<button aria-label="Добави Печен октопод към поръчката" class="add-to-order" type="button"><span class="order-button-label">Добави</span><span class="order-button-plus">+</span></button></article>
+<article class="menu-item" data-category="mains" data-image="img/ястия.png" data-name="Стек от блек ангъс" data-price="46.00">
+<img alt="Стек от блек ангъс" src="img/ястия.png"/>
+<div>
+<h3>Стек от блек ангъс</h3>
+<p>Сочен стек, печени зеленчуци, розмарин и сос от черен пипер.</p>
+<span>46.00 euro</span>
+</div>
+<button aria-label="Добави Стек от блек ангъс към поръчката" class="add-to-order" type="button"><span class="order-button-label">Добави</span><span class="order-button-plus">+</span></button></article>
+<article class="menu-item" data-category="mains" data-image="img/ястия4.png" data-name="Октопод с пюре" data-price="38.00">
+<img alt="Октопод с пюре" src="img/ястия4.png"/>
+<div>
+<h3>Октопод с пюре</h3>
+<p>Грилован октопод върху кадифено картофено пюре и лимонов сос.</p>
+<span>38.00 euro</span>
+</div>
+<button aria-label="Добави Октопод с пюре към поръчката" class="add-to-order" type="button"><span class="order-button-label">Добави</span><span class="order-button-plus">+</span></button></article>
+<article class="menu-item" data-category="pasta" data-image="img/ястия2.png" data-name="Талиатели с манатарки" data-price="24.00">
+<img alt="Талиатели с манатарки" src="img/ястия2.png"/>
+<div>
+<h3>Талиатели с манатарки</h3>
+<p>Пресни талиатели, манатарки, пармезан и трюфелово масло.</p>
+<span>24.00 euro</span>
+</div>
+<button aria-label="Добави Талиатели с манатарки към поръчката" class="add-to-order" type="button"><span class="order-button-label">Добави</span><span class="order-button-plus">+</span></button></article>
+<article class="menu-item" data-category="pasta" data-image="img/ястия4.png" data-name="Ризото с морски дарове" data-price="28.00">
+<img alt="Ризото с морски дарове" src="img/ястия4.png"/>
+<div>
+<h3>Ризото с морски дарове</h3>
+<p>Кремообразно ризото със скариди, миди, калмари и бяло вино.</p>
+<span>28.00 euro</span>
+</div>
+<button aria-label="Добави Ризото с морски дарове към поръчката" class="add-to-order" type="button"><span class="order-button-label">Добави</span><span class="order-button-plus">+</span></button></article>
+<article class="menu-item" data-category="desserts" data-image="img/ястия3.png" data-name="Шоколадов фондан" data-price="12.00">
+<img alt="Шоколадов фондан" src="img/ястия3.png"/>
+<div>
+<h3>Шоколадов фондан</h3>
+<p>Топъл шоколадов фондан с ванилов сладолед и солен карамел.</p>
+<span>12.00 euro</span>
+</div>
+<button aria-label="Добави Шоколадов фондан към поръчката" class="add-to-order" type="button"><span class="order-button-label">Добави</span><span class="order-button-plus">+</span></button></article>
+<article class="menu-item" data-category="desserts" data-image="img/ястия3.png" data-name="Чийзкейк с горски плодове" data-price="11.00">
+<img alt="Чийзкейк" src="img/ястия3.png"/>
+<div>
+<h3>Чийзкейк с горски плодове</h3>
+<p>Кадифен чийзкейк с домашен сос от горски плодове.</p>
+<span>11.00 euro.</span>
+</div>
+<button aria-label="Добави Чийзкейк с горски плодове към поръчката" class="add-to-order" type="button"><span class="order-button-label">Добави</span><span class="order-button-plus">+</span></button></article>
+<article class="menu-item" data-category="drinks" data-image="img/интериор.png" data-name="Чаша вино" data-price="8.00">
+<img alt="Чаша вино" src="img/интериор.png"/>
+<div>
+<h3>Чаша вино</h3>
+<p>Подбрана селекция български и световни вина.</p>
+<span>от 8.00 euro</span>
+</div>
+<button aria-label="Добави Чаша вино към поръчката" class="add-to-order" type="button"><span class="order-button-label">Добави</span><span class="order-button-plus">+</span></button></article>
+</div>
+</div>
+</section>
+</main>
+<section class="cta-band">
+<div class="container">
+<div>
+<p class="section-kicker">Очакваме ви в Почи</p>
+<h2>Прегледайте избраните ястия</h2>
+</div>
+<a class="btn btn-fill" href="orders.html">Вашите поръчки</a>
+</div>
+</section>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div>
+<a class="logo" href="index.html">
+<span>Почи</span>
+<small>Ресторант</small>
+</a>
+<p>Съвременна кухня с характер и внимание към детайла.</p>
+</div>
+<div>
+<h4>Навигация</h4>
+<ul>
+<li><a href="index.html">Начало</a></li>
+<li><a href="menu.html">Меню</a></li>
+<li><a href="about.html">За нас</a></li>
+<li><a href="gallery.html">Галерия</a></li>
+<li><a href="reservations.html">Резервации</a></li>
+<li><a href="contacts.html">Контакти</a></li>
+<li><a href="orders.html">Вашите поръчки</a></li></ul>
+</div>
+<div>
+<h4>Работно време</h4>
+<p>Понеделник – Неделя<br/>12:00 – 23:00</p>
+<p>Кухнята работи до 22:30</p>
+</div>
+<div>
+<h4>Контакти</h4>
+<p> 1000 София</p>
+<p>+359 X XXX XXXX</p>
+<p>rezervacii@pochi.bg</p>
+</div>
+</div>
+<div class="footer-bottom">© 2024 Ресторант Почи. Всички права запазени.</div>
+</div>
+</footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

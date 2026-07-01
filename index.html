@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Почи ресторант</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+<a aria-label="Почи ресторант" class="logo" href="index.html">
+<span>Почи</span>
+<small>Ресторант</small>
+</a>
+<nav class="nav" id="nav">
+<a class="active" data-page="index" href="index.html">Начало</a>
+<a data-page="menu" href="menu.html">Меню</a>
+<a data-page="about" href="about.html">За нас</a>
+<a data-page="gallery" href="gallery.html">Галерия</a>
+<a data-page="reservations" href="reservations.html">Резервации</a>
+<a data-page="contacts" href="contacts.html">Контакти</a>
+<a class="orders-nav-link" data-page="orders" href="orders.html">Вашите поръчки <span class="order-badge" data-order-count=""></span></a></nav>
+<a class="header-button order-header-button" href="orders.html">Вашите поръчки <span class="order-badge" data-order-count=""></span></a>
+<button aria-label="Отвори меню" class="menu-toggle" id="menuToggle" type="button">
+<span></span>
+<span></span>
+<span></span>
+<span class="burger-order-badge" data-order-count=""></span></button>
+</header>
+<main>
+<section class="hero">
+<div class="hero-media">
+<img alt="Основно ястие в ресторант Почи" src="img/екстериор.png"/>
+</div>
+<div class="hero-content container">
+<p class="eyebrow script-text">Добре дошли</p>
+<h1>Вкусът на<br/><span>добрите моменти</span></h1>
+<p class="lead">Съвременна кухня с характер, приготвена с внимание, вдъхновение и най-добрите сезонни продукти.</p>
+<div class="hero-actions">
+<a class="btn btn-fill" href="menu.html">Виж менюто</a>
+<a class="btn btn-line" href="orders.html">Вашите поръчки</a>
+</div>
+<div class="open-note">Отворено всеки ден: 12:00 – 23:00</div>
+</div>
+</section>
+<section class="specials section light-section">
+<div class="container center-text">
+<p class="section-kicker">Препоръчано</p>
+<h2>Нашите специалитети</h2>
+<div class="special-grid">
+<article class="special-card" data-image="img/ястия1.png" data-name="Бурата с печени домати" data-price="18.90">
+<img alt="Бурата с печени домати" src="img/ястия1.png"/>
+<div>
+<h3>Бурата с печени домати</h3>
+<p>Кремообразна бурата, печени чери домати, босилеково песто и балсамова редукция.</p>
+<strong>18.90 euro</strong>
+</div>
+<button aria-label="Добави Бурата с печени домати към поръчката" class="add-to-order special-add-to-order" type="button"><span class="order-button-label">Поръчай</span><span class="order-button-plus">+</span></button></article>
+<article class="special-card" data-image="img/ястия4.png" data-name="Октопод на грил" data-price="24.90">
+<img alt="Октопод на грил" src="img/ястия4.png"/>
+<div>
+<h3>Октопод на грил</h3>
+<p>Сочно опечен октопод, картофено пюре с лимон и каперси, маслиново олио.</p>
+<strong>24.90 euro</strong>
+</div>
+<button aria-label="Добави Октопод на грил към поръчката" class="add-to-order special-add-to-order" type="button"><span class="order-button-label">Поръчай</span><span class="order-button-plus">+</span></button></article>
+<article class="special-card" data-image="img/ястия2.png" data-name="Паста Ал Тартуфо" data-price="19.90">
+<img alt="Паста Ал Тартуфо" src="img/ястия2.png"/>
+<div>
+<h3>Паста Ал Тартуфо</h3>
+<p>Прясна паста с трюфелов сос, пармезан и ароматно трюфелово масло.</p>
+<strong>19.90 euro</strong>
+</div>
+<button aria-label="Добави Паста Ал Тартуфо към поръчката" class="add-to-order special-add-to-order" type="button"><span class="order-button-label">Поръчай</span><span class="order-button-plus">+</span></button></article>
+<article class="special-card" data-image="img/ястия3.png" data-name="Шоколадов фондан" data-price="11.90">
+<img alt="Шоколадов фондан" src="img/ястия3.png"/>
+<div>
+<h3>Шоколадов фондан</h3>
+<p>Топъл шоколадов кейк с течен център, ванилов сладолед и малини.</p>
+<strong>11.90 euro</strong>
+</div>
+<button aria-label="Добави Шоколадов фондан към поръчката" class="add-to-order special-add-to-order" type="button"><span class="order-button-label">Поръчай</span><span class="order-button-plus">+</span></button></article>
+</div>
+</div>
+</section>
+<section class="about section">
+<div class="container split">
+<div class="about-copy">
+<p class="eyebrow">За нас</p>
+<h2>Почи — място с душа и отношение към детайла</h2>
+<p>Почи е повече от ресторант. Това е място, където храната разказва истории, а атмосферата събира хората.</p>
+<a class="btn btn-line" href="about.html">Научи повече</a>
+</div>
+<div class="about-image">
+<img alt="Интериор на ресторант Почи" src="img/интериор.png"/>
+</div>
+</div>
+</section>
+<section class="gallery-strip section">
+<div class="container center-text">
+<p class="section-kicker">Галерия</p>
+<h2>Атмосфера, вкус и детайли</h2>
+<div class="strip-grid">
+<img alt="Стек със зеленчуци" src="img/ястия4.png"/>
+<img alt="Бурата с домати" src="img/ястия.png"/>
+<img alt="Октопод" src="img/ястия2.png"/>
+<img alt="Шоколадов десерт" src="img/ястия3.png"/>
+<img alt="Ресторант интериор" src="img/интериор1.png"/>
+<img alt="Екстериор на Почи" src="img/екстериор.png"/>
+</div>
+<a class="btn btn-line center" href="gallery.html">Виж още снимки</a>
+</div>
+</section>
+<section class="direction">
+<div class="direction-grid">
+<div class="direction-copy">
+<p class="section-kicker">Лесно и удобно</p>
+<h2>В центъра на София</h2>
+<p>Ресторант Почи се намира в сърцето на града, на крачки от основни забележителности и удобен градски транспорт.</p>
+<a class="btn btn-fill" href="contacts.html">Виж контакти</a>
+</div>
+<div class="direction-photo">
+<img alt="Вход на ресторант Почи" src="img/екстериор.png"/>
+</div>
+</div>
+</section>
+</main>
+<section class="cta-band">
+<div class="container">
+<div>
+<p class="section-kicker">Очакваме ви в Почи</p>
+<h2>Прегледайте избраните ястия</h2>
+</div>
+<a class="btn btn-fill" href="orders.html">Вашите поръчки</a>
+</div>
+</section>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div>
+<a class="logo" href="index.html">
+<span>Почи</span>
+<small>Ресторант</small>
+</a>
+<p>Съвременна кухня с характер и внимание към детайла.</p>
+</div>
+<div>
+<h4>Навигация</h4>
+<ul>
+<li><a href="index.html">Начало</a></li>
+<li><a href="menu.html">Меню</a></li>
+<li><a href="about.html">За нас</a></li>
+<li><a href="gallery.html">Галерия</a></li>
+<li><a href="reservations.html">Резервации</a></li>
+<li><a href="contacts.html">Контакти</a></li>
+<li><a href="orders.html">Вашите поръчки</a></li></ul>
+</div>
+<div>
+<h4>Работно време</h4>
+<p>Понеделник – Неделя<br/>12:00 – 23:00</p>
+<p>Кухнята работи до 22:30</p>
+</div>
+<div>
+<h4>Контакти</h4>
+<p> 1000 София</p>
+<p>+359 X XXX XXXX</p>
+<p>rezervacii@p-----i.bg</p>
+</div>
+</div>
+<div class="footer-bottom">© 2024 Ресторант Почи. Всички права запазени.</div>
+</div>
+</footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

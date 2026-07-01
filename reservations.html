@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Резервации | Почи</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+<a aria-label="Почи ресторант" class="logo" href="index.html">
+<span>Почи</span>
+<small>Ресторант</small>
+</a>
+<nav class="nav" id="nav">
+<a data-page="index" href="index.html">Начало</a>
+<a data-page="menu" href="menu.html">Меню</a>
+<a data-page="about" href="about.html">За нас</a>
+<a data-page="gallery" href="gallery.html">Галерия</a>
+<a class="active" data-page="reservations" href="reservations.html">Резервации</a>
+<a data-page="contacts" href="contacts.html">Контакти</a>
+<a class="orders-nav-link" data-page="orders" href="orders.html">Вашите поръчки <span class="order-badge" data-order-count=""></span></a></nav>
+<a class="header-button order-header-button" href="orders.html">Вашите поръчки <span class="order-badge" data-order-count=""></span></a>
+<button aria-label="Отвори меню" class="menu-toggle" id="menuToggle" type="button">
+<span></span>
+<span></span>
+<span></span>
+<span class="burger-order-badge" data-order-count=""></span></button>
+</header>
+<main>
+<section class="page-hero">
+<img alt="Резервации в Почи" src="img/интериор.png"/>
+<div class="container">
+<p class="eyebrow script-text">Вашата вечер започва тук</p>
+<h1>Резервации</h1>
+<p>Запазете своята маса и се насладете на незабравимо изживяване в ресторант Почи.</p>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="reservation-wrap">
+<div class="reservation-info">
+<p class="section-kicker">Направете резервация</p>
+<h2>Ние ще се погрижим за всичко</h2>
+<p>Попълнете формата по-долу и наш екип ще потвърди вашата резервация възможно най-скоро.</p>
+<ul>
+<li>Телефон за резервации<br/><strong>+359 X XXX XXXX</strong></li>
+<li>Имейл<br/><strong>rezervacii@------.bg</strong></li>
+<li>Работно време<br/><strong>Всеки ден от 12:00 до 23:00 ч.</strong></li>
+</ul>
+</div>
+<form class="reservation-form">
+<div class="form-grid">
+<div class="form-field"><label>Име</label><input placeholder="Вашето име" required="" type="text"/></div>
+<div class="form-field"><label>Телефон</label><input placeholder="08XXXXXXXX" required="" type="tel"/></div>
+<div class="form-field full"><label>Имейл</label><input placeholder="ime@example.com" required="" type="email"/></div>
+<div class="form-field"><label>Дата</label><input required="" type="date"/></div>
+<div class="form-field"><label>Час</label><select required=""><option value="">Изберете час</option><option>18:00</option><option>19:00</option><option>20:00</option><option>21:00</option></select></div>
+<div class="form-field"><label>Брой гости</label><select required=""><option value="">Брой гости</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select></div>
+<div class="form-field full"><label>Повод</label><select><option>Рожден ден, годишнина, бизнес вечеря...</option><option>Рожден ден</option><option>Годишнина</option><option>Бизнес вечеря</option></select></div>
+<div class="form-field full"><button class="btn btn-fill" type="submit">Изпрати заявка</button></div>
+</div>
+</form>
+</div>
+<div class="notice-row">
+<div class="notice-card"><h3>Работно време</h3><p>Понеделник – Четвъртък 17:00 – 23:00<br/>Петък – Събота 17:00 – 00:00<br/>Неделя 17:00 – 22:00</p></div>
+<div class="notice-card"><h3>Политика</h3><p>Резервациите се задържат до 15 минути след часа. За групи над 8 души е възможно предплащане.</p></div>
+<div class="notice-card"><h3>Частни събития</h3><p>Предлагаме персонализирани менюта и уютна обстановка за специални поводи.</p></div>
+</div>
+</div>
+</section>
+</main>
+<section class="cta-band">
+<div class="container">
+<div>
+<p class="section-kicker">Очакваме ви в Почи</p>
+<h2>Прегледайте избраните ястия</h2>
+</div>
+<a class="btn btn-fill" href="orders.html">Вашите поръчки</a>
+</div>
+</section>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div>
+<a class="logo" href="index.html">
+<span>Почи</span>
+<small>Ресторант</small>
+</a>
+<p>Съвременна кухня с характер и внимание към детайла.</p>
+</div>
+<div>
+<h4>Навигация</h4>
+<ul>
+<li><a href="index.html">Начало</a></li>
+<li><a href="menu.html">Меню</a></li>
+<li><a href="about.html">За нас</a></li>
+<li><a href="gallery.html">Галерия</a></li>
+<li><a href="reservations.html">Резервации</a></li>
+<li><a href="contacts.html">Контакти</a></li>
+<li><a href="orders.html">Вашите поръчки</a></li></ul>
+</div>
+<div>
+<h4>Работно време</h4>
+<p>Понеделник – Неделя<br/>12:00 – 23:00</p>
+<p>Кухнята работи до 22:30</p>
+</div>
+<div>
+<h4>Контакти</h4>
+<p> 1000 София</p>
+<p>+359 X XXX XXXX</p>
+<p>rezervacii@-------.bg</p>
+</div>
+</div>
+<div class="footer-bottom">© 2024 Ресторант Почи. Всички права запазени.</div>
+</div>
+</footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

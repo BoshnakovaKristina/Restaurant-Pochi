@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Контакти | Почи</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+<a aria-label="Почи ресторант" class="logo" href="index.html">
+<span>Почи</span>
+<small>Ресторант</small>
+</a>
+<nav class="nav" id="nav">
+<a data-page="index" href="index.html">Начало</a>
+<a data-page="menu" href="menu.html">Меню</a>
+<a data-page="about" href="about.html">За нас</a>
+<a data-page="gallery" href="gallery.html">Галерия</a>
+<a data-page="reservations" href="reservations.html">Резервации</a>
+<a class="active" data-page="contacts" href="contacts.html">Контакти</a>
+<a class="orders-nav-link" data-page="orders" href="orders.html">Вашите поръчки <span class="order-badge" data-order-count=""></span></a></nav>
+<a class="header-button order-header-button" href="orders.html">Вашите поръчки <span class="order-badge" data-order-count=""></span></a>
+<button aria-label="Отвори меню" class="menu-toggle" id="menuToggle" type="button">
+<span></span>
+<span></span>
+<span></span>
+<span class="burger-order-badge" data-order-count=""></span></button>
+</header>
+<main>
+<section class="page-hero">
+<img alt="Контакти ресторант Почи" src="img/екстериор.png"/>
+<div class="container">
+<p class="eyebrow script-text">Свържете се с нас</p>
+<h1>Контакти</h1>
+<p>Винаги сме тук за вас — за въпроси, резервации или специални поводи.</p>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="contact-grid">
+<div class="contact-card">
+<h3>Свържете се с нас</h3>
+<ul>
+<li><span>Адрес</span><strong> 1000 София</strong></li>
+<li><span>Телефон</span><strong>+359 X XXX XXXX</strong></li>
+<li><span>Имейл</span><strong>info@-----.bg</strong></li>
+<li><span>Работно време</span><strong>Понеделник – Неделя 12:00 – 23:30</strong></li>
+</ul>
+</div>
+<div class="map-card">
+<div class="map-placeholder">
+<div>
+<h3>Карта</h3>
+<p> София</p>
+</div>
+</div>
+</div>
+<form class="contact-form">
+<h3>Изпратете ни съобщение</h3>
+<input placeholder="Име и фамилия" required="" type="text"/>
+<br/><br/>
+<input placeholder="Имейл" required="" type="email"/>
+<br/><br/>
+<input placeholder="Телефон" type="tel"/>
+<br/><br/>
+<select><option>Относно</option><option>Резервация</option><option>Частно събитие</option><option>Друг въпрос</option></select>
+<br/><br/>
+<textarea placeholder="Вашето съобщение" required=""></textarea>
+<br/><br/>
+<button class="btn btn-fill" type="submit">Изпрати съобщение</button>
+</form>
+</div>
+</div>
+</section>
+<section class="direction">
+<div class="direction-grid">
+<div class="direction-copy">
+<p class="section-kicker">Как да ни откриете</p>
+<h2>Лесно и удобно</h2>
+<p>Ресторант Почи се намира в сърцето на София. Сградата е лесно достъпна с градски транспорт и разполага с паркинг в близост.</p>
+<p><strong>Паркинг:</strong> „Солунска“ – 2 мин. пеша<br/><strong>Метростанция:</strong> „Сердика“ – 5 мин. пеша</p>
+</div>
+<div class="direction-photo">
+<img alt="Маса в ресторант Почи" src="img/интериор.png"/>
+</div>
+</div>
+</section>
+</main>
+<section class="cta-band">
+<div class="container">
+<div>
+<p class="section-kicker">Очакваме ви в Почи</p>
+<h2>Прегледайте избраните ястия</h2>
+</div>
+<a class="btn btn-fill" href="orders.html">Вашите поръчки</a>
+</div>
+</section>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div>
+<a class="logo" href="index.html">
+<span>Почи</span>
+<small>Ресторант</small>
+</a>
+<p>Съвременна кухня с характер и внимание към детайла.</p>
+</div>
+<div>
+<h4>Навигация</h4>
+<ul>
+<li><a href="index.html">Начало</a></li>
+<li><a href="menu.html">Меню</a></li>
+<li><a href="about.html">За нас</a></li>
+<li><a href="gallery.html">Галерия</a></li>
+<li><a href="reservations.html">Резервации</a></li>
+<li><a href="contacts.html">Контакти</a></li>
+<li><a href="orders.html">Вашите поръчки</a></li></ul>
+</div>
+<div>
+<h4>Работно време</h4>
+<p>Понеделник – Неделя<br/>12:00 – 23:00</p>
+<p>Кухнята работи до 22:30</p>
+</div>
+<div>
+<h4>Контакти</h4>
+<p>1000 София</p>
+<p>+359 X XXX XXXX</p>
+<p>rezervacii@-------.bg</p>
+</div>
+</div>
+<div class="footer-bottom">© 2024 Ресторант Почи. Всички права запазени.</div>
+</div>
+</footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
